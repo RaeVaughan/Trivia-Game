@@ -42,7 +42,11 @@ var questions = [
 	},
 ]
 
-var number = 5;
+var correctCount = 0;
+var incorrectCount = 0;
+var unansweredCount = 0;
+
+var number = 120;
 var intervalId;
 
 function run(){
@@ -53,7 +57,8 @@ function decrement(){
 	number--;
 	$("#timer").html(number);
 	if (number === 0){
-		clearInterval(intervalId);
+		$("#content").html("<h2>" + "Finished!" + "</h2>" + "<h3>" + "Correct Answers: " + correctCount + "</h3>" + "<h3>" + "Incorrect Answers: " + incorrectCount + "</h3>" + "<h3>" + "Unanswered: " + unansweredCount + "</h3>");
+		$("#submit-button").hide();
 	}
 }
 
@@ -79,9 +84,9 @@ $("#start-button").click(function(){
 });
 
 $("#submit-button").click(function(){
-	$("#content").html("text");
+	$("#content").html("<h2>" + "Finished!" + "</h2>" + "<h3>" + "Correct Answers: " + correctCount + "</h3>" + "<h3>" + "Incorrect Answers: " + incorrectCount + "</h3>" + "<h3>" + "Unanswered: " + unansweredCount + "</h3>");
+	$("#submit-button").hide();
 })
-
 
 
 
