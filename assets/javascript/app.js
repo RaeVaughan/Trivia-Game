@@ -42,19 +42,28 @@ var questions = [
 	},
 ]
 
+$("#submit-button").hide();
+
 $("#start-button").click(function(){
 	$("#start-button").hide();
+	$("#submit-button").show();
 	
 	for (var i = 0; i < questions.length; i++) {
 
-		$("#content").append(questions[i].question + "<br>");
-		$("#content").append("<input type= 'radio' value = '" + questions[i].choices + "'" + ">" questions[i].choices + "<br>");
+		$("#content").append("<br>" + questions[i].question + "<br>");
 
+		for(var a = 0; a < questions[i].choices.length; a++){
+			$("#content").append("<input type='radio' name='" + questions[i].choices[a] + "'value='" + questions[i].choices[a] + "'>" + "&nbsp;" + questions[i].choices[a] + "<br>");
+		}
 	}
 
 });
 
 
+$("#submit-button").click(function(){
+	$("#content").html("text");
+
+})
 
 
 
