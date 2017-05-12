@@ -42,11 +42,30 @@ var questions = [
 	},
 ]
 
+var number = 5;
+var intervalId;
+
+function run(){
+	intervalId = setInterval(decrement, 1000);
+}
+
+function decrement(){
+	number--;
+	$("#timer").html(number);
+	if (number === 0){
+		clearInterval(intervalId);
+	}
+}
+
+//hides submit button when page loads
 $("#submit-button").hide();
 
+//when start button is clicked
 $("#start-button").click(function(){
 	$("#start-button").hide();
 	$("#submit-button").show();
+	$("#timer").text(number);
+	run();
 	
 	for (var i = 0; i < questions.length; i++) {
 
@@ -59,10 +78,8 @@ $("#start-button").click(function(){
 
 });
 
-
 $("#submit-button").click(function(){
 	$("#content").html("text");
-
 })
 
 
