@@ -1,0 +1,73 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("../images/background2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Open Sans', sans-serif;;
+}
+
+
+/********** header **********/
+
+#header {
+	text-align: center;
+	font-family: 'Cinzel Decorative', cursive;
+}
+
+h1 {
+	font-size: 72px;
+	color: #c0c0c0;
+	text-shadow: 2px 2px 8px #000;
+}
+
+
+
+/********** timer **********/
+
+#timer{
+	font-family: 'Cinzel', cursive;
+	font-size: 40px;
+	color: #e0d294;
+}
+
+
+/********** content container **********/
+
+#content {
+	background-color: #c0c0c0;
+	width: 75%;
+	opacity: .9;
+	border-radius: 25px;
+}
+
+
+/********** content: buttons **********/
+
+.btn-default {
+	color: #c0c0c0;
+	background-color: #424e74;
+	border-color: #333;
+}
+
+#start-button {
+	margin-top: 175px;
+	padding: 25px 75px;
+	font-size: 40px;
+	font-family: 'Cinzel', serif;
+	text-shadow: 2px 2px 8px #000;
+}
+
+#submit-button {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 25px 75px;
+	font-size: 40px;
+	font-family: 'Cinzel', serif;
+	text-shadow: 2px 2px 8px #000;
+}
+
