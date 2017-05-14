@@ -106,7 +106,6 @@ $("#submit-button").click(function() {
 
 //function to check answers
 function checkAnswers() {
-	debugger
 	//variable to select all the radios
   var radios = $("input[type='radio']");
   //filters all the radios for ones that are check and maps them onto new function
