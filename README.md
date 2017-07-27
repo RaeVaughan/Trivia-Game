@@ -4,7 +4,7 @@ https://raevaughan.github.io/Trivia-Game/
 
 Game of Thrones themed trivia game - built with HTML, CSS, Bootstrap, Google Fonts, JavaScript, and jQuery.
 
-![Game of Thrones trivia game](/assets/img/trivia-game-screenshot.png?raw=true "Game of Thrones trivia game screenshot")
+![Game of Thrones trivia game](../assets/img/trivia-game-screenshot.png?raw=true "Game of Thrones trivia game screenshot")
 
 
 Points for scaling:
